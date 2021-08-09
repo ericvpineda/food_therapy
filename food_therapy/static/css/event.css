@@ -24,6 +24,7 @@
 .mytext{
     border:0;
     padding:10px;
+    margin-left: -10px;
     background:#F8FAFD;
 }
 .text{
@@ -75,14 +76,13 @@
     background:#F8FAFD;
     
 }
-.msj{
+.msj{ 
     float:left;
     background: #FF2A5D;
     color: white;
 }
 .frame{
-    /* background:white; */
-    height:660px;
+    height:720px;
     overflow:hidden;
     padding:0;
 }
@@ -128,3 +128,11 @@ input:focus{
 :-moz-placeholder { /* Firefox 18- */
     color: #A7B0C0;
 }  
+
+div[contenteditable]{
+    border: 1px solid black;
+    max-height: 200px;
+    overflow: auto;
+}
+
+

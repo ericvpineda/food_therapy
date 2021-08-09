@@ -64,7 +64,7 @@ $(".mytext").on("keydown", function(e){
     }
 });
 
-$('body > div > div > div:nth-child(2) > span').click(function(){
+$(".send-button").click(function(){
     $(".mytext").trigger({type: 'keydown', which: 13, keyCode: 13});
 })
 
@@ -72,10 +72,11 @@ $('body > div > div > div:nth-child(2) > span').click(function(){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "I’m so sorry to hear about your relationship issues!", 0);  
+insertChat("me", "I’m so sorry to hear about your relationship issues!", 1000);  
 insertChat("you", "Yeah, it’s been really hard these past few weeks...", 1500);
 insertChat("me", "You gotta try these Chinese Tea boiled eggs, they’re amazing comfort food!", 3500);
 insertChat("you", "I’ll definitely give it a try! I heard about them for a while now.",7000);
 
 
 //-- NOTE: No use time on insertChat.
+insertChat("me", "insertChat can be used without time");  
