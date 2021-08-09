@@ -1,3 +1,5 @@
+{% load static %} 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/event.css' %}">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
     <title>Food Therapy</title>
 </head>
-<body>
-    
-    <h1>Event Page</h1>
 
+<body>
+    <div class=container>
+        <div id="header" class='row'>
+            <svg id='arrow' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.83 11L11.41 7.41L10 6L4 12L10 18L11.41 16.59L7.83 13H20V11H7.83Z" fill="#FF295D"/>
+            </svg>
+            <span id="header-text">How to get over my first break up?</span>
+        </div>
+        <div id="messages">
+            <div class="col-sm-3 col-sm-offset-4 frame">
+                <ul></ul>
+                <div>
+                    <div class="msj-rta macro">                        
+                        <div class="text text-r" style="background:whitesmoke !important">
+                            <input class="mytext" placeholder="Message here..."/>
+                        </div> 
+    
+                    </div>
+                    <div style="padding:10px;">
+                        <span class="glyphicon glyphicon-share-alt"></span>
+                    </div>                
+                </div>
+            </div>       
+        </div>  
+    </div>
     <script src="{% static 'js/event.js' %}"></script>
 </body>
 </html>
