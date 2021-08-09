@@ -1,8 +1,10 @@
 var me = {};
 me.avatar = "https://i.ibb.co/0s74kVh/zac-m-wright-healthcare-consultant-avatar-Head-tilt-April-2020.png";
+me.name = 'Me'
 
 var you = {};
 you.avatar = "https://i.ibb.co/QjnzbK0/unnamed.png";
+you.name = 'Julie'
 
 function formatAMPM(date) {
     var hours = date.getHours();
@@ -29,7 +31,7 @@ function insertChat(who, text, time){
                         '<div class="avatar"><img class="img-circle" style="width:100%;" src="'+ me.avatar +'" /></div>' +
                             '<div class="text text-l">' +
                                 '<p>'+ text +'</p>' +
-                                '<p style="color:white;"><small>'+date+'</small></p>' +
+                                '<p style="color:white;"><small>'+date + '</small></p>' +
                             '</div>' +
                         '</div>' +
                     '</li>';                    
@@ -38,7 +40,7 @@ function insertChat(who, text, time){
                         '<div class="msj-rta macro">' +
                             '<div class="text text-r">' +
                                 '<p>'+text+'</p>' +
-                                '<p><small>'+date+'</small></p>' +
+                                '<p><small>'+ date + ' - ' + you.name + '</small></p>' +
                             '</div>' +
                         '<div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="'+you.avatar+'" /></div>' +                                
                   '</li>';
