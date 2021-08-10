@@ -1,0 +1,82 @@
+.eventCategoriesHeader {
+    width: 376px;
+    height: 120px;  
+    background: #FF295D;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.eventCategoriesHeaderTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.eventCategoriesInput {
+    height: 50px; 
+    width: 88%; 
+    background: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    font-family: Inter; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    letter-spacing: -0.25px; 
+    color: #A7B0C0; 
+    padding-left: 10px; 
+    margin-left: 6%; 
+    margin-right: 6%;
+    box-shadow: 0px 5px 5px 0px #888;
+}
+
+.eventCategoriesImageBlocksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* position: absolute; */
+    width: 95%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    z-index: 3;
+}
+
+img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.eventCategoriesImageBlock {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.eventCategoriesBottomLeftText {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#eventCategoriesBackButton {
+    position: absolute;
+    margin-left: 7.5%;
+    margin-top: 60px;
+}

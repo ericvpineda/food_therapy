@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/event_categories.css' %}">
     <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
 </head>
 <body>
-    
-    <h1>Event Categories Page</h1>
+    <div class="eventCategoriesContainer">
+        <div class="eventCategoriesHeader">
+            <img src="../../static/food-images/icons/back_white.svg" id="eventCategoriesBackButton">
+            <p class="eventCategoriesHeaderTitle">
+                Event Topics
+            </p>
+            <input type="text" placeholder="Search Topic" class="eventCategoriesInput"/>
+        </div>
+        <div class="eventCategoriesImageBlocksContainer">
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/covid19.svg" class="eventCategoriesCovid19"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Covid-19
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/relationship.svg" class="eventCategoriesRelationship"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Relationship
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/familygathering.svg" class="eventCategoriesFamilyGathering"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Family
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/stress.svg" class="eventCategoriesStress"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Stress
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/friendship.svg" class="eventCategoriesFriendship"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Friendship
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/work.svg" class="eventCategoriesWork"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Work
+                </div>
+            </div>
+            <div class="eventCategoriesImageBlock">
+                <img src="../../static/food-images/icons/travel.svg" class="eventCategoriesTravel"> 
+                <div class="eventCategoriesBottomLeftText">
+                    Travel
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="{% static 'js/event_categories.js' %}"></script>
 </body>
