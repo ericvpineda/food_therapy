@@ -1,16 +1,58 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/food_detail.css' %}">
-    <title>Food Therapy</title>
-</head>
-<body>
-    
-    <h1>Food Detail Page</h1>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="{% static 'css/food_details.css' %}">
+    	<title>Food Therapy</title>
+	</head>
+	<body>
+		<div id="content-container" >
+			<div id="bg_food"  ></div>
+			<div id="image_block"  ></div>
+			<img src="/../../static/food-images/chocolate/chocolate_1.png" id="chocolate_1" />
 
-    <script src="{% static 'js/food_detail.js' %}"></script>
-</body>
+			<a _par="" href="food_browse">
+				<div id="ellipse"></div>
+				<div id="icon_left">
+					<img src="/../../static/food-images/chocolate/back_pink.png" id="back_pink" />
+				</div>
+			</a>
+
+			<div id="group">
+				<div id="rectangle_snacks"></div>
+				<div id="snacks">
+					SNACKS
+				</div>
+
+			</div>
+			<div id="dark_chocolate">
+				Dark Chocolate
+			</div>
+			<div id="description" >
+				Dark chocolate contain an amino acid called tryptophan that your brain uses to produce the neurotransmitter Serotonin, which can increase feelings of overall happiness. 
+			</div>
+			<a id="rectangle_add_link" href="food_browse">
+			<div id="rectangle_add"  ></div>
+			</a>
+
+			<div id="add_to_my_food_list">
+				ADD TO MY FOOD LIST
+			</div>
+
+			<div id="bullet_area">
+				<div id="bullet">
+					<img src="/../../static/food-images/chocolate/check.png" id="check_1" />
+					<img src="/../../static/food-images/chocolate/check.png" id="check_2" />
+					<img src="/../../static/food-images/chocolate/check.png" id="check_3" />
+					<img src="/../../static/food-images/chocolate/check.png" id="check_4" />
+				</div>
+				<div id="bullet_cont" >
+					Reduces stress<br/>Boost athletic performance<br/>Increases heart health<br/>Balances the immune system
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

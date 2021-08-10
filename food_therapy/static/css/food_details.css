@@ -1,0 +1,202 @@
+body {margin: 0px; padding: 0px; font-family: "Arial"; overflow-x: hidden;}
+
+img {position: absolute; display: block; margin: 0px; border: none; padding: 0px;}
+
+div {position: absolute;}
+
+#content-container {display: block; position: relative; width: 375px;  margin-left: auto; margin-right: auto;}
+
+#bg_food {
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	height: 812px;
+	background:rgba(255,255,255,1);
+}
+
+#image_block {
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	height: 398px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background:rgba(248,250,253,1);
+}
+
+#chocolate_1 {
+	top: 0px;
+	left: 0px;
+	width: 381px;
+	height: 385px;
+}
+
+#ellipse {
+	top: 52px;
+	left: 20px;
+	width: 30px;
+	height: 30px;
+	-ms-border-radius: 15px / 15px;
+	-o-border-radius: 15px / 15px;
+	-moz-border-radius: 15px / 15px;
+	-webkit-border-radius: 15px / 15px;
+	border-radius: 15px / 15px;
+	background: rgba(255,255,255,1);
+}
+
+#icon_left {
+	top: 55px;
+	left: 23px;
+	width: 24px;
+	height: 24px;
+}
+
+#back_pink {
+	top: 6px;
+	left: 4px;
+	width: 16px;
+	height: 12px;
+}
+
+#group {
+	position: absolute;
+	width: 100px;
+	height: 47px;
+	left: 34px;
+	top: 375px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#rectangle_snacks {
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	height: 47px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background:rgba(255,255,255,1);
+}
+
+#snacks {
+	top: 10px;
+	left: 6px;
+	width: 95.32px;
+	height: 35.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 17px;
+	text-align: center;
+	line-height: 28px;
+	letter-spacing: 1.2000000476837px;
+	color:#000000;
+}
+
+#dark_chocolate {
+	top: 434px;
+	left: 34px;
+	width: 310px;
+	height: 73px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 30px;
+	text-align: left;
+	line-height: 28px;
+	padding-top: 2px;
+	margin-top: -2px;
+	color:#000000;
+}
+
+#description {
+	top: 585px;
+	left: 56px;
+	width: 299px;
+	height: 147px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: left;
+	line-height: 20px;
+	color:#1D222D;
+}
+
+#rectangle_add {
+	top: 729px;
+	left: 84px;
+	width: 291px;
+	height: 45px;
+	background:rgba(255,42,93,1);
+}
+
+#add_to_my_food_list {
+	top: 739px;
+	left: 114px;
+	width: 263px;
+	height: 36px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: left;
+	line-height: 28px;
+	color:#FFFFFF;
+}
+
+#bullet_area {
+	top: 486px;
+	left: 56px;
+	width: 232px;
+	height: 84px;
+}
+
+#bullet {
+	top: 2px;
+	left: 0px;
+	width: 16px;
+	height: 82px;
+}
+
+#check_1 {
+	top: 0px;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+}
+
+#check_2 {
+	top: 22px;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+}
+
+#check_3 {
+	top: 44px;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+}
+
+#check_4 {
+	top: 66px;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+}
+
+#bullet_cont {
+	top: 0px;
+	left: 22px;
+	width: 222px;
+	height: 90px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: left;
+	line-height: 22px;
+	color: #000000;
+}
