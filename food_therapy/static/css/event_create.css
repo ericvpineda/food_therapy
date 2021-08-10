@@ -1,0 +1,75 @@
+.eventCreateTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+
+#eventCreateBackButton {
+    position: absolute;
+    margin-left: 7.5%;
+    margin-top: 20px;
+}
+
+.eventCreateInput {
+    height: 50px; 
+    width: 85%; 
+    background: #F8FAFD; 
+    border: 1px solid #E7ECF3; 
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    font-family: Inter; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    letter-spacing: -0.25px; 
+    color: #A7B0C0; 
+    padding-left: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    margin-left: 7.5%; 
+    margin-right: 7.5%;
+}
+
+#eventCreateEventDescription {
+    height: 100px; 
+}
+
+.eventCreateButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 16px 32px; */
+    height: 56px;
+    background: #FF295D;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.eventCreateButtonText {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}

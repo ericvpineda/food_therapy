@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/event_create.css' %}">
     <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<!-- google chilank fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
 </head>
 <body>
-    
-    <h1>Event Create Page</h1>
+    <div class="eventCreateContainer">
+        <div class="eventCreateHeader">
+            <img src="../../static/food-images/icons/back_red.png" id="eventCreateBackButton">
+            <p class="eventCreateTitle">Create Food Event</p>
+        </div>
+        <div class="eventCreateInputContainer">
+            <input type="text" placeholder="Name" class="eventCreateInput"/>
+            <input type="text" placeholder="Date & Time" class="eventCreateInput"/>
+            <input type="text" placeholder="Food Theme" class="eventCreateInput"/>
+            <input type="text" placeholder="Location" class="eventCreateInput"/>
+            <input type="text" placeholder="Event Description" class="eventCreateInput" id="eventCreateEventDescription"/>
+        </div>
+        <button class="eventCreateButton">
+            <p class="eventCreateButtonText">
+                Post My Event
+            </p>
+        </button>
+    </div>
 
     <script src="{% static 'js/event_create.js' %}"></script>
 </body>
