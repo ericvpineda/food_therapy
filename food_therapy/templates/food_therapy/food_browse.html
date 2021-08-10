@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/food_browse.css' %}">
     <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<!-- google chilank fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
 </head>
-<body>
-    
-    <h1>Food Browse Page</h1>
+
+<body style="background-color: #2c3232; overflow-y: hidden;">
+	<div class="food-header">
+		<img onclick="navDashboard()" id="back-btn" src="{% static 'food-images/icons/back.png' %}" alt="">
+		<p style="font-size: 3vh; font-family: Inter; color: white; margin-top: 3vh;">Comfort Food</p>
+		<div class="food-cont">
+			<img id="search-btn" src="{% static 'food-images/icons/search.png' %}" alt="">
+			<div class="food-nav-bar">
+				<div id="list-btn" class="food-btn-active">My Food List</div>
+				<div id="near-btn" class="food-btn-inactive">Food Near Me</div>
+				<div id="dishes-btn" class="food-btn-inactive">Main Dishes</div>
+				<div id="desserts-btn" class="food-btn-inactive">Desserts & Snacks</div>
+				<div id="fruits-btn" class="food-btn-inactive">Fruits</div>
+			</div>
+			<div class="nav-tab"></div>
+			<div class="food-a-cont">
+				<img id="img-1" class="Avocado" src="{% static 'food-images/list/Avocado.jpeg' %}" alt="" />
+				<img id="img-2" class="Ice_Cream" src="{% static 'food-images/list/Ice_Cream.jpeg' %}" alt="" />
+				<img id="img-3" class="Dark_Chocolate" src="{% static 'food-images/list/Dark_Chocolate.jpeg' %}" alt="" />
+				<img id="img-5" class="Tea" src="{% static 'food-images/list/Tea.jpeg' %}" alt="" />
+				<img id="img-6" class="Watermelon" src="{% static 'food-images/list/Watermelon.jpeg' %}" alt="" />
+				<img id="img-7" class="Salmon" src="{% static 'food-images/list/Salmon.jpeg' %}" alt="" />
+				<img id="img-8" class="Porridge" src="{% static 'food-images/list/Porridge.jpeg' %}" alt="" />
+				<img id="img-9" class="Pizza" src="{% static 'food-images/list/Pizza.jpeg' %}" alt="" />
+				<img id="img-10" class="Cake" src="{% static 'food-images/list/Cake.jpeg' %}" alt="" />
+			</div>
+		</div>
+	</div>
 
     <script src="{% static 'js/food_browse.js' %}"></script>
 </body>
