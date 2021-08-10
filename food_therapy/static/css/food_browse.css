@@ -1,0 +1,252 @@
+html, body {
+  height: 100%;
+  user-select: none;
+}
+
+.food-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14%;
+  width: 100%;
+  top:-5%;
+  border-radius: 10px;
+  font-family: 'Chilanka', cursive;
+  background: #FF295D;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+
+#back-btn {
+  position: relative;
+  left: -18%;
+  top: 2%;
+  height: 20%;
+}
+
+#search-btn {
+  height: 5.5%;
+  width: 100%;
+}
+
+
+.food-cont {
+  position: absolute;
+  top: 11.2%;
+  height: 100%;
+  width: 100%;
+  padding: 0 2.5% 0 2.5%;
+}
+
+.food-nav-bar {
+  display: flex;
+  position: absolute;
+  top: 3%;
+  height: 15%;
+  width: 95%;
+}
+
+.nav-tab {
+  position: absolute;
+  top: 5.3%;
+  height: 15%;
+  width: 19%;
+  font-size: 3.5vw;
+  background-color: white;
+  padding-bottom: 10%;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.food-btn-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 2.8vw;
+  color: black;
+  padding-bottom: 10%;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.food-btn-inactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 2.8vw;
+  color: white;
+  padding-bottom: 10%;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.food-a-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 95%;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  z-index: 3;
+}
+
+/* My food list images layout */
+.Avocado {
+  margin-top: 2.5vh;
+  margin-bottom: 2vh;
+  height: 20%;
+  width: 28%;
+  border-radius: 8px;
+}
+
+.Ice_Cream {
+  margin-top: 2.5vh;
+  margin-bottom: 2vh;
+  height: 20%;
+  width: 53%;
+  border-radius: 8px;
+}
+
+.Dark_Chocolate {
+  height: 28%;
+  width: 88%;
+  border-radius: 8px;
+}
+
+.Tea {
+  margin-top: 2vh;
+  height: 18%;
+  width: 37%;
+  border-radius: 8px;
+}
+
+.Watermelon {
+  margin-top: 2vh;
+  height: 18%;
+  width: 45%;
+  border-radius: 8px;
+}
+
+.Salmon {
+  margin-top: 2vh;
+  height: 18%;
+  width: 48%;
+  border-radius: 8px;
+}
+
+.Porridge {
+  margin-top: 2vh;
+  height: 18%;
+  width: 33%;
+  border-radius: 8px;
+}
+
+.Pizza {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  height: 22%;
+  width: 44%;
+  border-radius: 8px;
+}
+
+.Cake {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  height: 22%;
+  width: 37%;
+  border-radius: 8px;
+}
+
+.Avocado-text{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Ice_Cream-text{
+  position: absolute;
+  top: 20px;
+  left: 151px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Dark_Chocolate-text{
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Tea-text{
+  position: absolute;
+  top: 368px;
+  left: 25px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Watermelon-text{
+  position: absolute;
+  top: 370px;
+  left: 180px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Salmon-text{
+  position: absolute;
+  top: 500px;
+  left: 25px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Porridge-text{
+  position: absolute;
+  top: 500px;
+  left: 220px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Pizza-text{
+  position: absolute;
+  top: 631px;
+  left: 25px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
+
+.Cake-text{
+  position: absolute;
+  top: 631px;
+  left: 205px;
+  font-size: 2vh;
+  font-weight: 900;
+  color: #669472;
+}
