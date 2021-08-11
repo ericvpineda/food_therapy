@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/event_forum.css' %}">
     <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <div class="eventForumContainer">
+        <div class="eventForumHeader">
+            <a href="event_categories">
+                <img src="../../static/food-images/icons/back_white.svg" id="eventForumBackButton">
+            </a>
+            <p class="eventForumHeaderTitle">
+                Events For Stress Relief
+            </p>
+            <input type="text" placeholder="Search Event" class="eventForumInput"/>
+        </div>
+        <div class="eventForumBody">
+            <div class="eventForumEventContainer">
+                <p class="eventForumEventDate">Today</p>
+                <img src="../../static/food-images/icons/EventForumCheers.svg">
+            </div>
+            <div class="eventForumEventContainer">
+                <p class="eventForumEventDate">Wednesday, August 12th</p>
+                <a href="future_food_event">
+                    <img src="../../static/food-images/icons/EventForumIceCreamEvent.svg">
+                </a>
+            </div>
+        </div>
     
-    <h1>Event Forum Page</h1>
+    </div>
 
     <script src="{% static 'js/event_forum.js' %}"></script>
 </body>

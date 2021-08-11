@@ -1,0 +1,59 @@
+.eventForumHeader {
+    width: 376px;
+    height: 120px;  
+    background: #FF295D;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.eventForumHeaderTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.eventForumInput {
+    height: 50px; 
+    width: 88%; 
+    background: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    font-family: Inter; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    letter-spacing: -0.25px; 
+    color: #A7B0C0; 
+    padding-left: 10px; 
+    margin-left: 6%; 
+    margin-right: 6%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#eventForumBackButton {
+    position: absolute;
+    margin-left: 7.5%;
+    margin-top: 60px;
+}
+
+.eventForumEventContainer {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.eventForumEventDate {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #FF2A5D;
+}
