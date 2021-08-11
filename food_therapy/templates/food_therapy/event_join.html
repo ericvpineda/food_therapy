@@ -1,0 +1,63 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/event_join.css' %}">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Food Therapy</title>
+</head>
+
+<body>
+
+    {% comment %} note: background img  {% endcomment %}
+    <div class="bg-img">
+        <a href="{% url 'dashboard' %}">
+            <svg id='arrow' width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.83 11L11.41 7.41L10 6L4 12L10 18L11.41 16.59L7.83 13H20V11H7.83Z" fill="#FF295D"/>
+            </svg>
+        </a>
+    </div>
+
+    {% comment %} note: deadline block  {% endcomment %}
+    <div class="bottom">
+        <div class="deadline-block">
+            {% comment %} note: deadline  {% endcomment %}
+            <div class="deadline">
+                <span id="date">Today</span> <span id="bar">|</span> <span id="time">Now</span>
+            </div>
+        </div>
+        <div class="description">
+        
+            <h1 id="title">How to get over my first breakup?</h1>
+            <h3>Theme: Chinese Food</h3>
+            <p>Recently, I just broke up with my 5 year girlfriend and am feeling completely lost. I've lost motivation to eat and been isolating myself from my close friends and family. I am hoping to have a meaning conversation about my hard times right now. If you can, feel to drop into my and give me some pointer or advice during my food event. Thank you so much!</p>
+        </div>
+
+        <a class="join" href="{% url 'event' id="1" %}">
+            <button class="join-button">JOIN NOW</button>
+        </a>
+       
+        <a class="join host" href="{% url 'event' id="0" %}">
+            <button class="join-button">HOST</button>
+        </a>
+
+    </div>
+   
+    {% comment %} js files  {% endcomment %}
+    <script src="{% static 'js/event_join.js' %}"></script>
+</body>
+</html>

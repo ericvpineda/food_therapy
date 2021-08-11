@@ -1,3 +1,5 @@
+{% load static %} 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/event.css' %}">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
     <title>Food Therapy</title>
 </head>
-<body>
-    
-    <h1>Event Page</h1>
 
+<body>
+    <p id='uid'>{{uid}}</p>
+    
+    <div class="container">
+
+        {% comment %} header  {% endcomment %}
+        <div id="header" class='row'>
+            
+            <a href="{% url 'event_join' %}">
+                <svg id='arrow' width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.83 11L11.41 7.41L10 6L4 12L10 18L11.41 16.59L7.83 13H20V11H7.83Z" fill="#fff"/>
+                </svg>
+            </a>
+            
+            <span id="header-text">How to get over my first break up?</span>
+        </div>
+
+        <!-- Chat function source code: https://bootsnipp.com/snippets/y8e4W -->
+        <div class="video-wrap">
+            <video id="video" style="width: 22rem; height: 22rem" playsinline autoplay></video>
+            <video id="support" style="width: 8rem; height: 8rem" playsinline autoplay></video>
+
+        </div>
+        
+       
+        <div id="messages">
+        
+            
+            <div class="frame">
+                
+                {% comment %} note: where messages get added  {% endcomment %}
+                <ul>
+                </ul>
+
+            </div>       
+
+        </div>  
+
+       
+
+    </div>
+
+     <div class="text-box">
+
+                {% comment %} note: chat box  {% endcomment %}
+                <div class="msj-rta macro-text-box inner-text-box">                        
+                    <div id="enter-button" class="text text-r">
+                        <input class="mytext" placeholder="Message here..."/>
+                    </div> 
+                    <span class="send-button"><img src="https://i.ibb.co/8MnjxGY/paper-plane.png" alt="paper-plane" border="0" height="25px" width="25px"></a></span>
+
+                </div>
+                
+                {% comment %} note: chat send button  {% endcomment %}
+
+                <div class="video-button start-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-camera-video-off" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.961 12.365a1.99 1.99 0 0 0 .522-1.103l3.11 1.382A1 1 0 0 0 16 11.731V4.269a1 1 0 0 0-1.406-.913l-3.111 1.382A2 2 0 0 0 9.5 3H4.272l.714 1H9.5a1 1 0 0 1 1 1v6a1 1 0 0 1-.144.518l.605.847zM1.428 4.18A.999.999 0 0 0 1 5v6a1 1 0 0 0 1 1h5.014l.714 1H2a2 2 0 0 1-2-2V5c0-.675.334-1.272.847-1.634l.58.814zM15 11.73l-3.5-1.555v-4.35L15 4.269v7.462zm-4.407 3.56-10-14 .814-.58 10 14-.814.58z"/>
+                    </svg>
+                </div>
+
+                <div class="video-button end-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" fill="#FF2A5D"/>
+                    </svg>
+                </div>
+
+        </div>
+
+    {% comment %} js files  {% endcomment %}
     <script src="{% static 'js/event.js' %}"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+body {
+    font-family: "Roboto";
+}
+
+#arrow {
+    /* color: #FF2A5D; */
+    background-color: #fff;
+
+    margin-left: 2rem;
+    margin-top: 4rem;
+
+    border-radius: 50%;
+}
+
+.bg-img {
+    height: 50%;
+    width: 100%;
+        
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://images.unsplash.com/photo-1569435998017-abb5d562dedf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+
+    position: fixed;
+    z-index: -1;
+}
+
+.bottom {
+    position: absolute;
+    z-index: 10;
+    top: 43%;
+
+    padding: 3rem;
+
+}
+
+.deadline-block {
+    width: 12rem;
+}
+
+.deadline {
+
+    background-color: #fff;
+
+    padding: 1.5rem 3rem 1.5rem 3rem;
+
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+#title {
+    font-weight: 800px;
+}
+
+#date, #bar, #time {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#date {
+    color: #343a40;
+}
+
+#bar {
+    color: #adb5bd;
+}
+
+#time {
+    color: #FF2A5A;
+}
+
+.join {
+    float: right;
+}
+
+.join-button {
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+    color: #fff;
+    background-color: #FF2A5A;
+    padding: 1rem 3rem;
+    border: none;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.host {
+    margin-right: 1rem;
+}
