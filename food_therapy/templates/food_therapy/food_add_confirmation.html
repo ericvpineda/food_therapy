@@ -24,7 +24,10 @@
                     Yummy!
                 </p>
                 <p class="eventAddConfirmationDescription">The food has been added to your food list</p>
-                <button class="eventAddConfirmationButton">Go to Dashboard</button>
+                <a href="{% url 'dashboard' %}">
+                    <button class="eventAddConfirmationButton">Go to Dashboard</button>
+                </a>
+                
                 <a href="food_browse">
                     <p class="eventAddConfirmationGoBack">Check out my food list</p>
                 </a>

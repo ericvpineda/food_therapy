@@ -11,15 +11,13 @@ const person_id = uid;
 
 var users = [
     {
-        "name" : "Thomas",
+        "name" : "Hugh",
         "uid" : null,
-        "name" : 'Thomas',
         "avatar" : "https://i.ibb.co/0s74kVh/zac-m-wright-healthcare-consultant-avatar-Head-tilt-April-2020.png",
     },
     {
         "name" : "Julie",
         "uid" : null,
-        "name" : 'Julie',
         "avatar" : "https://i.ibb.co/QjnzbK0/unnamed.png",
         
     }]

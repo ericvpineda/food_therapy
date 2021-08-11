@@ -14,6 +14,21 @@ html, body {
     border-radius: 50%;
 }
 
+
+
+#home {
+    position: absolute;
+    background-color: #FF2A5D;
+
+    width: 3.5rem;
+    height: 3.5rem;
+   
+    margin-left: 8rem;
+    margin-top: 3rem;
+
+    border-radius: 50%;
+}
+
 .profile {
     background: linear-gradient(to right top, #FF2A5D, #FF2A5D);
     padding: 6rem 12%; 
@@ -62,7 +77,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
@@ -81,6 +96,8 @@ html, body {
 
     border: none;
     border-radius: 7px;
+
+    height: 3.8rem;
 }
 
 .food-events, .food-topics {
@@ -90,8 +107,10 @@ html, body {
 
 #food-events-pic {
     width: 40rem;
-    max-width: 85%;
+    max-width: 95%;
     max-height: 22rem;
+
+    margin-left: 1rem;
 
     border-radius: 12px;
     box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
@@ -99,23 +118,26 @@ html, body {
 
 .food-topics {
     margin-top: 1.5rem;
-    gap: 1.5rem;
+    margin-left: 1rem;
+    /* gap: 1.5rem; */
 }
 
 .comfort-food, .create-food-event {
     width: 19rem;
-    max-width: 42.5%;
+    max-width: 95%;
     max-height: 22rem;
 
     border-radius: 12px;
     box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
 }
 
+
+
 .upcoming-events {
 
     margin: 2rem auto;
     width: 90%;
-    max-width: 40rem;
+    max-width: 38rem;
     /* background-color: lightgreen; */
     /* display: flex; */
     /* flex-direction: column; */

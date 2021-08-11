@@ -26,6 +26,12 @@
         </svg>
     </a>
 
+    <a href="{% url 'dashboard' %}">
+        <div >
+           <img id="home" src="{% static '../../static/img/home_white.jpg' %}" alt="">
+        </div>
+    </a>
+
     <main>
 
         <section class="profile">
@@ -40,25 +46,39 @@
 
                 <div class="name">Hugh Axeman</div> 
 
-                <div><button class="food-list-button">My Food List <img id="book" src="{% static '../../static/img/book.png' %}" alt=""></button></div>
+                
+                <a href="{% url 'food_browse' %}">
+                    <div>
+                        <button class="food-list-button">My Food List <img id="book" src="{% static '../../static/img/book.png' %}" alt=""></button>
+                    </div>
+                </a>
 
             </div>
 
           </header>
 
 
-        <div class="food-events">
-            
-            <img id="food-events-pic" src="{% static '../../static/img/food_events.jpg' %}" alt="">
+            <div class="food-events">
+                <a href="{% url 'event_categories' %}">
+        
+                    <img id="food-events-pic" src="{% static '../../static/img/food_events.jpg' %}" alt="">
 
-        </div>
+                </a>
+
+            </div>
+
+
 
 
         <div class="food-topics">
 
-            <img class="comfort-food" src="{% static '../../static/img/comfort_food.jpg' %}">
+            <a href="{% url 'food_browse' %}">
+                <img class="comfort-food" src="{% static '../../static/img/comfort_food.jpg' %}">
+            </a>
 
-            <img class="create-food-event" src="{% static '../../static/img/create_food_event.jpg' %}">
+            <a href="{% url 'event_create' %}">
+                <img class="create-food-event" src="{% static '../../static/img/create_food_event.jpg' %}">
+            </a>
 
         </div>
 
@@ -66,10 +86,6 @@
 
         <div class="container upcoming-events">
 
-
-            {% comment %} <div class="upcoming-events-inner"> {% endcomment %}
-                
-                
             <ul class="row grid">
                 
                 <a style="color: black" href="{% url 'event_join' %}">
@@ -80,11 +96,13 @@
                     </article>
                 </a>
                 
-                <article class="col event">
-                    <img src="{% static '../../static/img/ice_cream.jpg' %}" alt="">
-                    <p>How to deal with problematic coworker?</p>
-                    <div>Wed, Aug 12</div>
-                </article>
+                <a style="color: black" href="{% url 'future_food_event' %}">
+                    <article class="col event">
+                        <img src="{% static '../../static/img/ice_cream.jpg' %}" alt="">
+                        <p>How to deal with problematic coworker?</p>
+                        <div>Wed, Aug 12</div>
+                    </article>
+                </a>
                 
                 <article class="event">
                     <img src="https://www-static.weddingbee.com/wp-content/uploads/2018/07/bbq1-371845.jpg" alt="">
@@ -98,10 +116,7 @@
                     <div>Thurs, Oct 3</div>
                 </article>
 
-
             </ul>
-
-            {% comment %} </div> {% endcomment %}
 
         </div>
     

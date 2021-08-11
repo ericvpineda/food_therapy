@@ -24,7 +24,9 @@
                     Alright!
                 </p>
                 <p class="eventAddConfirmationDescription">The event has been added to your calendar</p>
-                <button class="eventAddConfirmationButton">Go to Dashboard</button>
+                
+                <a href="{% url 'dashboard' %}"><button class="eventAddConfirmationButton">Go to Dashboard</button></a>
+                
                 <a href="future_food_event">
                     <p class="eventAddConfirmationGoBack">Go back to the event</p>
                 </a>

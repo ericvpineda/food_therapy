@@ -17,9 +17,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
 </head>
 
+
+
 <body style="background-color: #2c3232; overflow-y: hidden;">
+
+	<a href="{% url 'dashboard' %}">
+		<svg id='arrow' width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M7.83 11L11.41 7.41L10 6L4 12L10 18L11.41 16.59L7.83 13H20V11H7.83Z" fill="#FF295D"/>
+		</svg>
+	</a>
+
+	<a href="{% url 'dashboard' %}">
+        <div >
+           <img id="home" src="{% static '../../static/img/home_white.jpg' %}" alt="">
+        </div>
+    </a>
+
+
 	<div class="food-header">
-		<img onclick="navDashboard()" id="back-btn" src="{% static 'food-images/icons/back.png' %}" alt="">
+		
 		<p style="font-size: 3vh; font-family: Inter; color: white; margin-top: 3vh;">Comfort Food</p>
 		<div class="food-cont">
 			<img id="search-btn" src="{% static 'food-images/icons/search.png' %}" alt="">

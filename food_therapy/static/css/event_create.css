@@ -1,3 +1,14 @@
+#arrow {
+    /* color: #FF2A5D; */
+    position: absolute;
+    background-color: #FF295D;
+
+    margin-left: 2rem;
+    /* margin-top: 2rem; */
+
+    border-radius: 50%;
+}
+
 .eventCreateTitle {
     font-family: Inter;
     font-style: normal;
@@ -28,12 +39,27 @@
     font-weight: normal; 
     font-size: 16px; 
     letter-spacing: -0.25px; 
-    color: #A7B0C0; 
+    /* color: #A7B0C0;  */
     padding-left: 10px; 
     margin-top: 10px; 
     margin-bottom: 10px; 
     margin-left: 7.5%; 
     margin-right: 7.5%;
+}
+
+.eventCreateInput-block {
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    margin-left: 1%; 
+    margin-right: 14%;
+
+}
+
+.eventCreateInput-img {
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    margin-left: 7.5%; 
+
 }
 
 #eventCreateEventDescription {

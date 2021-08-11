@@ -31,9 +31,12 @@
             <p class="futureFoodEventBodyFood">Ice Cream</p>
             <p class="futureFoodEventBodyDescription">I’ve been working at my company for several years now, and recently my manager hired a new employee that doesn’t work well with me. I’ve tried having an open mind and to build a better relationship with my coworker, but nothing seems to be working out. If anyone has any experience dealing with coworkers that are hard to work with, please stop by my event. I appreciate it!</p>
         </div>
-        <button class="futureFoodEventButton">
-            ADD TO CALENDAR
-        </button>
+        
+        <a href="{% url 'event_add_confirmation' %}">
+            <button class="futureFoodEventButton">
+                ADD TO CALENDAR
+            </button>
+        </a>
     </div>
 
     <script src="{% static 'js/future_food_event.js' %}"></script>

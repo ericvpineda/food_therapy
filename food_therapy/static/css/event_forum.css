@@ -1,3 +1,14 @@
+#arrow {
+    /* color: #FF2A5D; */
+    position: absolute;
+    background-color: #fff;
+
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+    border-radius: 50%;
+}
+
 .eventForumHeader {
     width: 376px;
     height: 120px;  
