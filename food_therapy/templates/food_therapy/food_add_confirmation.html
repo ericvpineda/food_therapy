@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/event_add_confirmation.css' %}">
+    <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="eventAddConfirmationContainer">
+       <div class="eventAddConfirmationModalContainer">
+           <div class="eventAddConfirmationModalContent">
+                <img src="../../static/food-images/icons/complete.svg" class="eventAddConfirmationComplete">
+                <p class="eventAddConfirmationTitle">
+                    Yummy!
+                </p>
+                <p class="eventAddConfirmationDescription">The food has been added to your food list</p>
+                <button class="eventAddConfirmationButton">Go to Dashboard</button>
+                <a href="food_browse">
+                    <p class="eventAddConfirmationGoBack">Check out my food list</p>
+                </a>
+            </div>
+       </div>
+    </div>
+
+    <script src="{% static 'js/event_add_confirmation.js' %}"></script>
+</body>
+</html>
