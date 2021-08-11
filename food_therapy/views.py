@@ -24,3 +24,7 @@ def food_detail(request):
 
 def food_list(request):
     return render(request, 'food_therapy/food_list.html')
+
+def future_food_event(request):
+    return render(request, 'food_therapy/future_food_event.html')
+

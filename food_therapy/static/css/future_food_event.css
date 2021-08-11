@@ -1,0 +1,76 @@
+#futureFoodEventBackIcon{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.futureFoodEventTime {
+    position: absolute;
+    left: 34px;
+    top: 375px;
+    width: 187px;
+    height: 47px;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding-top: 10px;
+
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.futureFoodEventBody {
+    width: 84%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.futureFoodEventBodyTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.futureFoodEventBodyFood {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1.75px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.futureFoodEventBodyDescription {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1D232E;
+}
+
+.futureFoodEventButton {
+    width: 291px;
+    height: 45px;
+    float: right;
+    border: none;
+    outline: none;
+    background: #FF2A5D;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}

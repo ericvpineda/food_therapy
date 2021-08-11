@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/future_food_event.css' %}">
+    <title>Food Therapy</title>
+
+    <script type="text/javascript" src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="futureFoodEventContainer">
+        <div class="futureFoodEventHeader">
+            <img src="../../static/food-images/icons/back_icon_circle.svg" id="futureFoodEventBackIcon">
+            <img src="../../static/food-images/desserts/FoodEventIceCream.svg" id="futureFoodEventPicture">
+            <div class="futureFoodEventTime">
+                August 12 | 6PM
+            </div>
+        </div>
+        <div class="futureFoodEventBody">
+            <p class="futureFoodEventBodyTitle">How To Deal With A Problematic Coworker?</p>
+            <p class="futureFoodEventBodyFood">Ice Cream</p>
+            <p class="futureFoodEventBodyDescription">I’ve been working at my company for several years now, and recently my manager hired a new employee that doesn’t work well with me. I’ve tried having an open mind and to build a better relationship with my coworker, but nothing seems to be working out. If anyone has any experience dealing with coworkers that are hard to work with, please stop by my event. I appreciate it!</p>
+        </div>
+        <button class="futureFoodEventButton">
+            ADD TO CALENDAR
+        </button>
+    </div>
+
+    <script src="{% static 'js/future_food_event.js' %}"></script>
+</body>
+</html>
