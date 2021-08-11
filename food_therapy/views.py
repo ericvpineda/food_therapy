@@ -31,3 +31,6 @@ def future_food_event(request):
 def event_add_confirmation(request):
     return render(request, 'food_therapy/event_add_confirmation.html')
 
+def event_create_confirmation(request):
+    return render(request, 'food_therapy/event_create_confirmation.html')
+
