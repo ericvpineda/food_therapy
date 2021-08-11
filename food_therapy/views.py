@@ -28,3 +28,6 @@ def food_list(request):
 def future_food_event(request):
     return render(request, 'food_therapy/future_food_event.html')
 
+def event_add_confirmation(request):
+    return render(request, 'food_therapy/event_add_confirmation.html')
+
