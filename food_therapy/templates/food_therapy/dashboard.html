@@ -7,12 +7,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
-    <title>Food Therapy</title>
-</head>
-<body>
     
-    <h1>Dashboard Page</h1>
+    {% comment %} bootstrap  {% endcomment %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script src="{% static 'js/dashboard.js' %}"></script>
+    {% comment %} google font  {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet"></head>
+<body>
+
+    {% comment %} <div class="top"></div> {% endcomment %}
+    <a href="{% url 'title' %}">
+        <svg id='arrow' width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.83 11L11.41 7.41L10 6L4 12L10 18L11.41 16.59L7.83 13H20V11H7.83Z" fill="#FF295D"/>
+        </svg>
+    </a>
+
+    <main>
+
+        <section class="profile">
+
+        </section>
+
+         <header class="profile-contents">
+
+            <img id="profile-pic" src="{% static '../../static/img/profile_pic.jpg' %}" alt="">
+            
+            <div class="description">
+
+                <div class="name">Hugh Axeman</div> 
+
+                <div><button class="food-list-button">My Food List <img id="book" src="{% static '../../static/img/book.png' %}" alt=""></button></div>
+
+            </div>
+
+          </header>
+
+
+        <div class="food-events">
+            
+            <img id="food-events-pic" src="{% static '../../static/img/food_events.jpg' %}" alt="">
+
+        </div>
+
+
+        <div class="food-topics">
+
+            <img class="comfort-food" src="{% static '../../static/img/comfort_food.jpg' %}">
+
+            <img class="create-food-event" src="{% static '../../static/img/create_food_event.jpg' %}">
+
+        </div>
+
+        <div class="upcoming-events-title">Your Upcoming Food Events</div>
+
+        <div class="container upcoming-events">
+
+
+            {% comment %} <div class="upcoming-events-inner"> {% endcomment %}
+                
+                
+            <ul class="row grid">
+                
+                <a style="color: black" href="{% url 'event_join' %}">
+                    <article class="col event">
+                        <img src="{% static '../../static/img/drink_pic.jpg' %}" alt="">
+                        <p>How to get over my first breakup?</p>
+                        <div><span id="now">Now</span></div>
+                    </article>
+                </a>
+                
+                <article class="col event">
+                    <img src="{% static '../../static/img/ice_cream.jpg' %}" alt="">
+                    <p>How to deal with problematic coworker?</p>
+                    <div>Wed, Aug 12</div>
+                </article>
+                
+                <article class="event">
+                    <img src="https://www-static.weddingbee.com/wp-content/uploads/2018/07/bbq1-371845.jpg" alt="">
+                    <p>Better relationship with father-in-law?</p>
+                    <div>Tues, Sep 14</div>
+                </article>
+                
+                <article class="event">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/images/choc-sex-01-1509109202.jpg?resize=768:*" alt="">
+                    <p>What can we do to spice up our sex lives?</p>
+                    <div>Thurs, Oct 3</div>
+                </article>
+
+
+            </ul>
+
+            {% comment %} </div> {% endcomment %}
+
+        </div>
+    
+    
+    </main>
 </body>
 </html>

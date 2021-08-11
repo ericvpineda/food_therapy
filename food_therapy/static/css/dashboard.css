@@ -1,3 +1,197 @@
-/* body {
-    background-color: lightsalmon;
-} */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#arrow {
+    /* color: #FF2A5D; */
+    position: absolute;
+    background-color: #fff;
+
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+    border-radius: 50%;
+}
+
+.profile {
+    background: linear-gradient(to right top, #FF2A5D, #FF2A5D);
+    padding: 6rem 12%; 
+    border-radius: 0 0 12px 12px;
+}
+
+.profile-contents {
+
+    display: flex;
+
+    background-color: white;
+    padding: 1rem 0 1rem 0;
+
+    border-radius: 12px;
+    max-width: 85%;
+    width: 400px;
+
+    /* note: this is how you overlap objects  */
+    margin: -4rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+}
+
+#profile-pic {
+    width: 10rem; 
+    height: 10rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 20px;
+}
+
+#handwave {
+    width: 4rem; 
+    height: 4rem;
+    margin-right: 2rem;
+    border-radius: 20px;
+}
+
+#book {
+    width: 2rem; 
+    height: 2rem;
+    margin-right: 2rem;
+    border-radius: 4px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.description .name {
+    letter-spacing: 1px;
+    font-size: 25px;
+
+    color: #e63946;
+}
+
+
+.food-list-button {
+    background-color: #219ebc;
+    color: white;
+    padding: 1rem 0.5rem 1rem 2rem;
+
+    border: none;
+    border-radius: 7px;
+}
+
+.food-events, .food-topics {
+    display: flex;
+    justify-content: center;
+}
+
+#food-events-pic {
+    width: 40rem;
+    max-width: 85%;
+    max-height: 22rem;
+
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+}
+
+.food-topics {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.comfort-food, .create-food-event {
+    width: 19rem;
+    max-width: 42.5%;
+    max-height: 22rem;
+
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+}
+
+.upcoming-events {
+
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+    /* background-color: lightgreen; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+/* .upcoming-events-inner {
+
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    width: 40rem;
+    /* background-color: lightgreen; */
+/* } */ 
+
+.upcoming-events-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    margin-top: 4rem;
+    color:#e63946;
+    font-size: 2rem;
+}
+
+.event img {
+    width: 16rem;
+    height: 14rem;
+    border-radius: 12px;
+}
+
+.grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+    line-height: 2.2rem;
+    /* max-height: 22rem; */
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+.grid::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+.event {
+    width: 16rem;
+    height: 22rem;
+    margin-right: 1rem;
+    /* transform-origin: center;    */
+    border-radius: 12px;
+    background-color: #fff;
+
+    padding: 0;
+
+    display: inline-block;
+    flex-direction: column;
+}
+
+/* note: fix nowrap issue  */
+.event p {
+    line-break: normal;
+    white-space: normal;
+
+}
+
+#now {
+    color:#e63946;
+}
+
+a {
+}

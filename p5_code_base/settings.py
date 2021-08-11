@@ -25,7 +25,16 @@ SECRET_KEY = 'django-insecure-c5do*i-v&+7%=+&$0&)i#u0=+v-vp2=6c(gq3_fj7qc8r6apwi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CHANNEL_LAYERS = {
+    'default' : {
+        'BACKEND' : 'channels.layers.InMemoryChannelLayer',
+        # 'CONFIG' : {
+        #     "hosts" : [('127.0.0.1', '6379')]
+        # },
+    },
+}
 
 
 # Application definition
@@ -37,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'food_therapy'
+    'food_therapy',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +81,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'p5_code_base.wsgi.application'
+ASGI_APPLICATION = 'p5_code_base.routing.application'
 
 
 # Database
